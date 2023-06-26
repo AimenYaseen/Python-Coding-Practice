@@ -17,7 +17,7 @@ print(is_panagram("hashim"))
 
 def is_pangram(_string):
     _string = _string.lower()
-    # chr() convert digits from 97-123 to its ascii lower case character
+    # chr() convert digits from 97-122 to its ascii lower case character
     charset = [chr(i) for i in range(97, 123)]
     for char in charset:
         if char not in _string:
